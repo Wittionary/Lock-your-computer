@@ -1,5 +1,5 @@
-$wallpaperPath = "$HOME\\Downloads\\bg.jpg"
-
+$wallpaperPath = "$HOME"
+$wallpaperPath = $wallpaperPath+'\Downloads\bg.jpg'
 Function Get-WallPaper($wallpaperPath){
   $imgUrl = @("http://i.imgur.com/NJc5RAH.png",` #mouse
           "http://patenteux.com/Messy_desktop/messy_wallpaper-1920x1200.jpg",` #messy
