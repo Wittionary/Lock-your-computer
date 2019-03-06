@@ -21,8 +21,7 @@ Function Set-FlipScreen(){
 }
 
 Function Invoke-Mischief(){
-  $functionList = @('Get-WallPaper; Set-WallPaper;',`
-                    "Set-FlipScreen")
+  $functionList = @('Get-WallPaper; Set-WallPaper;','Set-FlipScreen')
  Get-Random -InputObject $functionList
 }
 
