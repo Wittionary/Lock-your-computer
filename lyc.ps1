@@ -27,4 +27,6 @@ Function Invoke-Mischief(){
 }
 
 # Execute with powershell (iwr https://raw.githubusercontent.com/Wittionary/Lock-your-computer/master/lyc.ps1).Content
-Invoke-Mischief
+# Invoke-Mischief
+Get-WallPaper
+Set-WallPaper
