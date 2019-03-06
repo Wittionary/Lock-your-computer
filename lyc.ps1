@@ -1,4 +1,4 @@
-$wallpaperPath = "$HOME\Downloads\bg.jpg"
+$wallpaperPath = "$HOME\\Downloads\\bg.jpg"
 
 Function Get-WallPaper($wallpaperPath){
   $imgUrl = @("http://i.imgur.com/NJc5RAH.png",` #mouse
