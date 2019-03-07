@@ -6,7 +6,8 @@ Function Get-WallPaper($wallpaperPath){
           'https://www.pixelstalk.net/wp-content/uploads/2016/07/1920x1080-Naruto-Wallpapers-HD-620x349.jpg' #naruto
           )
   $output = $wallpaperPath
-  (New-Object System.Net.WebClient).DownloadFile((Get-Random -InputObject $imgUrl), $output)
+  $imgUrl = Get-Random -InputObject $imgUrl
+  (New-Object System.Net.WebClient).DownloadFile($imgUrl, $output)
 }
 
 Function Set-WallPaper($wallpaperPath){
