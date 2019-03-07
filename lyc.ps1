@@ -7,7 +7,7 @@ Function Get-WallPaper($wallpaperPath){
           )
   $output = $wallpaperPath
   $imgUrl = Get-Random -InputObject $imgUrl
-  (New-Object System.Net.WebClient).DownloadFile($imgUrl, $output)
+  (New-Object System.Net.WebClient).DownloadFile("$imgUrl", "$output")
 }
 
 Function Set-WallPaper($wallpaperPath){
